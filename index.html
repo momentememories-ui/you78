@@ -55,7 +55,7 @@
         <p id="status-text" class="instruction">แตะหน้าจอเพื่อเล่นเพลง</p>
     </div>
 
-    <audio id="bgMusic" src="song.mp3" loop></audio>
+    <audio id="bgMusic" src="https://docs.google.com/uc?export=download&id=1mMsY7yb5jtQcACV9tVNkRDfXJf48D7jq" loop></audio>
 
     <script>
         const canvas = document.getElementById("heart");
@@ -84,7 +84,6 @@
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             ctx.fillStyle = "#ff8fa3";
-            // ✅ ใช้ฟอนต์ Prompt เหมือน UI
             ctx.font = "bold 14px 'Prompt', sans-serif";
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
@@ -117,7 +116,6 @@
         window.addEventListener('click', playMusic);
         window.addEventListener('touchstart', playMusic);
 
-        // ✅ รอ font โหลดก่อนค่อยเริ่มวาด
         document.fonts.ready.then(() => {
             draw();
         });
